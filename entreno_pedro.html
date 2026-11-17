@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f8f5">
+<title>Fuerza · Pedro</title>
+<style>
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#202521;background:#f6f5f1;font-synthesis:none}*{box-sizing:border-box}body{margin:0}button,input,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #326750;outline-offset:2px}.shell{max-width:760px;margin:auto;padding:26px 16px 65px}header{display:flex;justify-content:space-between;align-items:start;gap:12px;margin-bottom:26px}h1{font-size:clamp(26px,6vw,34px);font-weight:750;letter-spacing:-1.35px;margin:0}.sub{color:#717871;font-size:13px;margin-top:5px}.pill{font-size:11px;border:1px solid #d9ded7;color:#626c61;padding:8px 10px;border-radius:99px;white-space:nowrap}.tabs{display:flex;gap:7px;background:#eaece6;padding:5px;border-radius:15px;margin-bottom:22px}.tabs button{flex:1;border:0;background:transparent;border-radius:11px;padding:12px 4px;color:#627064;font-weight:650}.tabs button.active{background:#fff;color:#244d37;box-shadow:0 2px 6px #152b1612}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.toolbar h2{font-size:20px;letter-spacing:-.6px;margin:0 0 4px}.muted{font-size:12px;color:#777f77}.date{background:#fff;border:1px solid #dce1d9;border-radius:10px;padding:9px;max-width:157px;color:#38473b;font-size:13px}.exercise{background:#fff;border:1px solid #e5e8e0;border-radius:16px;padding:17px 15px 15px;margin:11px 0;box-shadow:0 2px 8px #1c2d1c06}.ex-head{display:flex;align-items:start;gap:10px;margin-bottom:13px}.num{flex-shrink:0;width:25px;height:25px;display:grid;place-items:center;background:#edf4ed;color:#316648;border-radius:8px;font-size:12px;font-weight:750}.ex-title{font-size:15px;line-height:1.35;font-weight:680;margin:1px 0 3px}.hint{font-size:12px;color:#7b817b;line-height:1.5}.sets{display:grid;grid-template-columns:52px 1fr 1fr;gap:8px;align-items:center}.sets .head{color:#818b81;font-size:11px;font-weight:650;text-align:center;padding-bottom:2px}.setlabel{font-size:12px;color:#737c73}.setinput{width:100%;min-width:0;text-align:center;border:1px solid #e3e8df;border-radius:10px;background:#fafbf8;color:#1f3026;padding:11px 5px;font-weight:650;font-size:16px}.setinput:focus{background:#fff}.extra-section{margin-top:24px;padding-top:15px;border-top:1px solid #dce1d9}.extra-header{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px}.extra-header h3{margin:0;font-size:16px;font-weight:750;letter-spacing:-.3px}.extra-section .exercise{border-style:dashed;box-shadow:none}.extra-sub{font-size:12px;color:#777f77;line-height:1.5;margin:0 0 12px}.notes{margin-top:17px;background:#fff;border:1px solid #e5e8e0;padding:17px 15px;border-radius:16px}.notes label{font-weight:680;font-size:14px;display:block;margin-bottom:9px}.notes textarea{width:100%;min-height:64px;resize:vertical;border:1px solid #e3e8df;border-radius:10px;padding:10px 12px;background:#fafbf8;font-size:14px;line-height:1.5;color:#24372a}.info{margin:14px 0;color:#6c756d;font-size:12px;line-height:1.6}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}.action{border-radius:10px;padding:10px 13px;border:1px solid #dce1d9;background:#fff;color:#45554a;font-size:12px;font-weight:650}.action.primary{background:#28593d;color:#fff;border-color:#28593d}.save{color:#4c7b5a;font-size:12px;margin-top:12px;min-height:18px}.history{margin-top:26px}.history h3{font-size:15px;margin:0 0 10px}.history-list{display:flex;gap:7px;flex-wrap:wrap}.history-date{border:1px solid #d9e0d7;background:white;padding:9px 12px;border-radius:9px;font-size:12px;color:#536555}.history-date.selected{background:#e0eee3;border-color:#acc9b2;color:#255238}.empty{font-size:12px;color:#858d85}.footer{margin-top:30px;color:#838b83;font-size:11px;line-height:1.6}.footer button{background:none;border:0;padding:0;color:#526b55;text-decoration:underline}#file{display:none}@media(max-width:400px){.pill{display:none}.shell{padding:20px 12px 55px}.exercise{padding:14px 12px}.toolbar{align-items:end}.date{max-width:145px}}
+
+/* Paleta clara de alto contraste: evita texto oscuro sobre superficies oscuras
+   incluso cuando el navegador o el sistema usan modo oscuro. */
+:root {color-scheme:light; background:#f7f8f5; color:#18271e;}
+html,body {background:#f7f8f5!important; color:#18271e!important;}
+.shell,header,.toolbar,.extra-section,.history,.footer {color:#18271e;}
+h1,h2,h3,.ex-title,.notes label {color:#17251b!important;}
+.sub,.muted,.hint,.extra-sub,.info,.setlabel,.footer,.empty {color:#526156!important;}
+.pill {background:#fff;color:#354a3c;border-color:#cbd5ca;}
+.tabs {background:#e2e8e0;}
+.tabs button {background:transparent;color:#344839!important;}
+.tabs button.active {background:#fff!important;color:#174a2d!important;}
+.exercise,.notes {background:#fff!important;color:#18271e!important;border-color:#d8e1d6;}
+.num {background:#e4f0e6;color:#205c35;}
+.sets .head {color:#435548;}
+.setinput,.notes textarea,.date {background:#fff!important;color:#18271e!important;border-color:#b8c7b9; -webkit-text-fill-color:#18271e;}
+.setinput::placeholder,.notes textarea::placeholder {color:#77877a;opacity:1;}
+.action {background:#fff!important;color:#244b34!important;border-color:#b9cbbb;}
+.action.primary {background:#225a3c!important;color:#fff!important;border-color:#225a3c; -webkit-text-fill-color:#fff;}
+.history-date {background:#fff!important;color:#244b34!important;border-color:#bccdbd;}
+.history-date.selected {background:#daeadc!important;color:#174b30!important;border-color:#9fbea5;}
+.save {color:#22623b!important;}
+.footer button {color:#205b39!important;}
+button:focus-visible,input:focus-visible,textarea:focus-visible {outline-color:#246a43;}
+</style>
+</head>
+<body><main class="shell"><header><div><h1>Fuerza <span style="color:#417654">·</span> Pedro</h1><div class="sub">30 minutos · 3 días · Progresión sostenible</div></div><div class="pill">Guardado local</div></header>
+<nav class="tabs" aria-label="Entrenamientos"><button class="active" data-tab="A">A · Lunes</button><button data-tab="B">B · Miércoles</button><button data-tab="C">C · Viernes</button></nav>
+<section class="toolbar"><div><h2 id="dayTitle">Fuerza básica</h2><div class="muted" id="subtitle">2 series · RIR 3–4</div></div><input class="date" type="date" id="date" aria-label="Fecha del entrenamiento"></section>
+<div id="exercises"></div>
+<section class="extra-section" aria-label="Ejercicios extra opcionales"><div class="extra-header"><h3>EXTRA</h3><span class="muted">Sólo si tienes tiempo</span></div><p class="extra-sub">Opcional · Elige uno o ambos, sin alargar la sesión por obligación.</p><div id="extras"></div></section>
+<section class="notes"><label for="notes">Notas de la sesión</label><textarea id="notes" placeholder="¿Cómo han respondido el hombro y la espalda?"></textarea></section>
+<div class="info" id="sessionHint"></div>
+<div class="actions"><button class="action primary" id="today">Hoy</button><button class="action" id="copyPrevious">Copiar última sesión</button><button class="action" id="export">Exportar datos</button><button class="action" id="import">Importar datos</button><input id="file" type="file" accept="application/json,.json"></div>
+<div class="save" id="save">Los cambios se guardan automáticamente.</div>
+<section class="history"><h3>Sesiones anteriores</h3><div class="history-list" id="history"></div></section>
+<footer class="footer">Los pesos están en kg. RIR 3–4 = termina cada serie pudiendo hacer 3–4 repeticiones más. Si un ejercicio agrava el dolor o fuerza el hombro, no lo realices. <button id="clear">Borrar datos</button></footer></main>
+<script>
+(()=>{'use strict';
+const KEY='fuerza_pedro_v1';
+const plan={
+A:{name:'Fuerza básica',hint:'Prensa: espalda apoyada. Empuje: agarre neutro y recorrido cómodo, sólo si está autorizado tras la cirugía. Si molesta, omitir y consultar una alternativa.',items:[
+ ['prensa','Prensa de piernas','10–12 reps · pelvis apoyada'],
+ ['remo','Remo con pecho apoyado','10–12 reps · sin balanceo lumbar'],
+ ['press','Press de pecho en máquina','8–12 reps · agarre neutro, sin forzar recorrido'],
+ ['biceps','Curl de bíceps en polea','10–15 reps · codos controlados']],extras:[
+ ['extraA_ext','Extensión de cuádriceps','10–15 reps · controlado'],
+ ['extraA_gem','Gemelos en máquina sentado','12–15 reps · sin rebotes']]},
+B:{name:'Cadena posterior y brazos',hint:'Hip thrust: no hiperextiendas la zona lumbar. Si molesta, cambia por extensión de cuádriceps. En remos, usa apoyo de pecho.',items:[
+ ['femoral','Curl femoral sentado','10–15 reps · movimiento suave'],
+ ['hip','Hip thrust en máquina','10–12 reps · sin arquear la espalda'],
+ ['remo','Remo con pecho apoyado','10–12 reps · rango cómodo'],
+ ['triceps','Extensión de tríceps en polea','10–15 reps · codos cerca del cuerpo']],extras:[
+ ['extraB_biceps','Curl de bíceps en máquina','10–15 reps · sin llevar hombro al límite'],
+ ['extraB_ext','Extensión de cuádriceps','10–15 reps · controlado']]},
+C:{name:'Fuerza general',hint:'Repetimos los básicos para progresar sin añadir complejidad. No fuerces el rango de hombro ni las cargas cuando el lumbar esté sensible.',items:[
+ ['prensa','Prensa de piernas','10–12 reps · pelvis apoyada'],
+ ['press','Press de pecho en máquina','8–12 reps · sólo si está autorizado y es cómodo'],
+ ['remo','Remo con pecho apoyado','10–12 reps · tronco estable'],
+ ['martillo','Curl martillo','10–15 reps · sin balanceos']],extras:[
+ ['extraC_fem','Curl femoral sentado','10–15 reps · sin impulsos'],
+ ['extraC_triceps','Extensión de tríceps en polea','10–15 reps · codos estables']]}
+};
+let tab='A',db={};const $=id=>document.getElementById(id);const iso=()=>{const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};const validDate=s=>/^\d{4}-\d{2}-\d{2}$/.test(s);const k=(t,d)=>`${t}|${d}`;
+try{let loaded=JSON.parse(localStorage.getItem(KEY)||'{}');if(loaded&&typeof loaded==='object'&&!Array.isArray(loaded))db=loaded}catch(e){$('save').textContent='No se pudieron leer los datos guardados.'}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(db));$('save').textContent='✓ Guardado automáticamente'}catch(e){$('save').textContent='No se pudo guardar. Exporta una copia de tus datos.'}}
+function getEntry(){const key=k(tab,$('date').value);if(!db[key]||typeof db[key]!=='object')db[key]={sets:{},notes:''};if(!db[key].sets||typeof db[key].sets!=='object')db[key].sets={};return db[key]}
+function prior(t,d){return Object.keys(db).filter(x=>x.startsWith(t+'|')&&x.slice(2)<d).sort().reverse()[0]}
+function sanitizeNum(s){const n=String(s||'').trim().replace(',','.');return n===''?'':(/^(\d{1,4})(\.\d{0,2})?$/.test(n)?n:null)}
+function render(){const date=$('date').value;if(!validDate(date)){$('date').value=iso()}const data=plan[tab],entry=db[k(tab,$('date').value)]||{sets:{},notes:''};$('dayTitle').textContent=data.name;$('subtitle').textContent='2 series por ejercicio · RIR 3–4';$('sessionHint').textContent=data.hint;const container=$('exercises');container.replaceChildren();const extraContainer=$('extras');extraContainer.replaceChildren();function drawExercises(items,target,optional){items.forEach((ex,i)=>{const [id,title,hint]=ex;const card=document.createElement('article');card.className='exercise';const heading=document.createElement('div');heading.className='ex-head';const num=document.createElement('div');num.className='num';num.textContent=optional?'+':i+1;const tx=document.createElement('div');let titleEl=document.createElement('div');titleEl.className='ex-title';titleEl.textContent=title;let hintEl=document.createElement('div');hintEl.className='hint';hintEl.textContent=hint;tx.append(titleEl,hintEl);heading.append(num,tx);card.append(heading);const grid=document.createElement('div');grid.className='sets';['Serie','Peso (kg)','Reps'].forEach(x=>{const h=document.createElement('div');h.className='head';h.textContent=x;grid.append(h)});for(let n=0;n<2;n++){let s=document.createElement('div');s.className='setlabel';s.textContent=`Serie ${n+1}`;grid.append(s);for(let field of ['kg','reps']){const inp=document.createElement('input');inp.className='setinput';inp.type='text';inp.inputMode='decimal';inp.autocomplete='off';inp.placeholder='—';inp.setAttribute('aria-label',`${title}, serie ${n+1}, ${field==='kg'?'kilogramos':'repeticiones'}`);const sk=`${id}_${n}`;inp.value=entry.sets?.[sk]?.[field]??'';inp.addEventListener('input',()=>{const v=sanitizeNum(inp.value);if(v===null){$('save').textContent='Introduce un número válido';return}if(field==='reps'&&v!==''&&(!Number.isInteger(Number(v))||Number(v)>100)){$('save').textContent='Repeticiones: número entero de 0 a 100';return}let e=getEntry();e.sets[sk]??={kg:'',reps:''};e.sets[sk][field]=v;persist();history()});grid.append(inp)}}card.append(grid);target.append(card)});}drawExercises(data.items,container,false);drawExercises(data.extras||[],extraContainer,true);$('notes').value=entry.notes||'';history()}
+function history(){const dates=Object.keys(db).filter(x=>x.startsWith(tab+'|')).map(x=>x.slice(2)).filter(d=>{let e=db[k(tab,d)];return e&&(e.notes?.trim()||Object.values(e.sets||{}).some(x=>x.kg!==''||x.reps!==''))}).sort().reverse();let out=$('history');out.replaceChildren();if(!dates.length){let empty=document.createElement('div');empty.className='empty';empty.textContent='Aún no hay sesiones registradas.';out.append(empty);return}dates.slice(0,14).forEach(d=>{const b=document.createElement('button');b.className='history-date'+(d===$('date').value?' selected':'');const [y,m,day]=d.split('-');b.textContent=`${day}/${m}/${y}`;b.onclick=()=>{$('date').value=d;render();window.scrollTo({top:0,behavior:'smooth'})};out.append(b)})}
+function switchTab(t){tab=t;document.querySelectorAll('[data-tab]').forEach(b=>{const on=b.dataset.tab===t;b.classList.toggle('active',on);b.setAttribute('aria-selected',String(on))});render()}
+document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>switchTab(b.dataset.tab)));$('date').value=iso();$('date').addEventListener('change',render);$('notes').addEventListener('input',()=>{getEntry().notes=$('notes').value;persist();history()});$('today').onclick=()=>{$('date').value=iso();render()};$('copyPrevious').onclick=()=>{const prev=prior(tab,$('date').value);if(!prev){alert('No hay una sesión anterior de este entrenamiento.');return}const current=getEntry();if(Object.values(current.sets).some(x=>x.kg!==''||x.reps!=='' )||current.notes.trim()){if(!confirm('¿Sustituir los datos de esta sesión por los de la última?'))return}const src=db[prev];db[k(tab,$('date').value)]={sets:JSON.parse(JSON.stringify(src.sets||{})),notes:''};persist();render()};$('export').onclick=()=>{const blob=new Blob([JSON.stringify({app:'Fuerza Pedro',version:1,records:db},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`fuerza-pedro-${iso()}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),3000)};$('import').onclick=()=>$('file').click();$('file').onchange=async ev=>{const f=ev.target.files[0];if(!f)return;try{if(f.size>2e6)throw Error('Archivo demasiado grande');const j=JSON.parse(await f.text());if(j.app!=='Fuerza Pedro'||j.version!==1||!j.records||typeof j.records!=='object'||Array.isArray(j.records))throw Error('Formato de archivo incorrecto');if(!confirm('¿Importar copia? Sustituirá todos los registros actuales.'))return;db=j.records;persist();render()}catch(e){alert('No se pudo importar: '+e.message)}finally{ev.target.value=''}};$('clear').onclick=()=>{if(confirm('¿Borrar todos los entrenamientos registrados? Esta acción no se puede deshacer.')){db={};persist();render()}};switchTab('A');
+})();
+</script></body></html>
